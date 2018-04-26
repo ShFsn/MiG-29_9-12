@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+  <model>
+   <livery>
+    <name type="string">GermanyAF_[20]</name>
+    <texture-fuselage>Liveries/Germany_[20]/MiG-29_GermanyAF_[20]_1.png</texture-fuselage>
+    <texture-wings>Liveries/Germany_[20]/MiG-29_GermanyAF_[20]_2.png</texture-wings>
+   </livery>
+  </model>
+ </sim>
+
+</PropertyList>

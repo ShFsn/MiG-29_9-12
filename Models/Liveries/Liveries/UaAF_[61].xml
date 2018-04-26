@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+  <model>
+   <livery>
+    <name type="string">UaAF_[61]</name>
+    <texture-fuselage>Liveries/UaAF_[61]/MiG-29_UaAF61_1.png</texture-fuselage>
+    <texture-wings>Liveries/UaAF_[61]/MiG-29_UaAF61_2.png</texture-wings>
+   </livery>
+  </model>
+ </sim>
+
+</PropertyList>
