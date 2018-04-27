@@ -6,6 +6,7 @@
   <model>
    <livery>
     <name type="string">HungaryAF_Falcon</name>
+    <bn-type>0</bn-type>
     <texture-fuselage>Liveries/Hungary_Falkon/MiG-29_Hungary_Falkon_1.png</texture-fuselage>
     <texture-wings>Liveries/Hungary_Falkon/MiG-29_Hungary_Falkon_2.png</texture-wings>
    </livery>

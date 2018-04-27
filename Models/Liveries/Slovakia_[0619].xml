@@ -6,6 +6,7 @@
   <model>
    <livery>
     <name type="string">SlovakiaAF_[0619]</name>
+    <bn-type>0</bn-type>
     <texture-fuselage>Liveries/SlovakiaAF_[0619]/MiG-29_slovakia-[0619]_1.png</texture-fuselage>
     <texture-wings>Liveries/SlovakiaAF_[0619]/MiG-29_slovakia-[0619]_2.png</texture-wings>
    </livery>

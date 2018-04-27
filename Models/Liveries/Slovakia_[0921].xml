@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+  <model>
+   <livery>
+    <name type="string">SlovakiaAF_[0921]</name>
+    <bn-type>0</bn-type>
+    <texture-fuselage>Liveries/SlovakiaAF_[0921]/MiG-29_slovakia-[0921]_1.png</texture-fuselage>
+    <texture-wings>Liveries/SlovakiaAF_[0921]/MiG-29_slovakia-[0921]_2.png</texture-wings>
+   </livery>
+  </model>
+ </sim>
+
+</PropertyList>

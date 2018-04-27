@@ -6,6 +6,7 @@
   <model>
    <livery>
     <name type="string">UaAF_[57]</name>
+    <bn-type>0</bn-type>
     <texture-fuselage>Liveries/UaAF_[57]/MiG-29_UaAF57_1.png</texture-fuselage>
     <texture-wings>Liveries/UaAF_[57]/MiG-29_UaAF57_2.png</texture-wings>
    </livery>

@@ -6,6 +6,7 @@
   <model>
    <livery>
     <name type="string">RuAF_Marins</name>
+    <bn-type>0</bn-type>
     <texture-fuselage>Liveries/RuAF_Marins/MiG-29_Ru_Marins_1.png</texture-fuselage>
     <texture-wings>Liveries/RuAF_Marins/MiG-29_Ru_Marins_2.png</texture-wings>
    </livery>
