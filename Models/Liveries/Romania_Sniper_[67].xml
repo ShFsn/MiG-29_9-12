@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <sim>
+  <model>
+   <livery>
+    <name type="string">RomaniaAF_Sniper_[67]</name>
+    <texture-fuselage>Liveries/Romania_Sniper_[67]/MiG-29_romania_sniper_[67]_1.png</texture-fuselage>
+    <texture-wings>Liveries/Romania_Sniper_[67]/MiG-29_romania_sniper_[67]_2.png</texture-wings>
+   </livery>
+  </model>
+ </sim>
+
+</PropertyList>
