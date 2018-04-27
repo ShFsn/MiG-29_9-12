@@ -272,6 +272,10 @@
    <int n="30" alias="mig29/weapons/podv/T4"/>
    <int n="31" alias="mig29/weapons/podv/T5"/>
    <int n="32" alias="mig29/weapons/podv/T6"/>
+   <float n="11" alias="/engines/engine[0]/augmentation"/>
+   <float n="12" alias="/engines/engine[0]/nozzle-pos-norm"/>
+   <float n="13" alias="/engines/engine[0]/augmentation"/>
+   <float n="14" alias="/engines/engine[0]/nozzle-pos-norm"/>
   </generic>
  </multiplay>
 

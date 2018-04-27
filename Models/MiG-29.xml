@@ -16,6 +16,23 @@
  <model>
   <name>JetFlame</name>
   <path>Aircraft/MiG-29_9-12/Models/JetFlame.xml</path>
+  <condition>
+   <not>
+    <property>/sim/rendering/shaders/skydome</property>
+   </not>
+  </condition>
+ </model>
+ <model>
+  <path>Aircraft/MiG-29_9-12/Models/Effects/Afterburner/als-afterburner-L.xml</path>
+   <condition>
+    <property>/sim/rendering/shaders/skydome</property>
+   </condition>
+ </model>
+ <model>
+  <path>Aircraft/MiG-29_9-12/Models/Effects/Afterburner/als-afterburner-R.xml</path>
+   <condition>
+    <property>/sim/rendering/shaders/skydome</property>
+   </condition>
  </model>
  <model>
   <name>WingtipLampLeft</name>
