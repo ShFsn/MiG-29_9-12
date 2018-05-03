@@ -310,7 +310,6 @@
   <object-name>upper_podR</object-name>
   <object-name>StabL</object-name>
   <object-name>StabR</object-name>
-  <object-name>Insignia</object-name>
 </effect>
 
  <animation>
@@ -449,7 +448,6 @@
   <object-name>MiG-29.BNL2</object-name>
   <object-name>MiG-29.BNR1</object-name>
   <object-name>MiG-29.BNR2</object-name>
-  <object-name>Insignia</object-name>
  </effect>
 
  <!--effect>
