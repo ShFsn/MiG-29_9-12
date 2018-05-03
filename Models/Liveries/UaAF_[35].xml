@@ -9,6 +9,7 @@
     <bn-type>0</bn-type>
     <texture-fuselage>Liveries/UaAF_[35]//MiG-29_UaAF35_1.png</texture-fuselage>
     <texture-wings>Liveries/UaAF_[35]/MiG-29_UaAF35_2.png</texture-wings>
+    <texture-insignia>Liveries/UaAF_[35]/Insignia.png</texture-insignia>
    </livery>
   </model>
  </sim>

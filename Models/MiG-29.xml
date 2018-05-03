@@ -204,6 +204,115 @@
   </unload>
  </nasal>
 
+ <effect>
+  <inherits-from>Aircraft/MiG-29/Models/Effects/Shaders/reflect-uber</inherits-from>
+  <object-name>Pitot</object-name>
+  <object-name>Radome</object-name>
+  <object-name>fuselage</object-name>
+  <object-name>lowerfusbox</object-name>
+  <object-name>DUALeft</object-name>
+  <object-name>DUARight</object-name>
+  <object-name>DUS</object-name>
+  <object-name>Antena</object-name>
+  <object-name>KOLS_Glass</object-name>
+  <object-name>KOLS</object-name>
+  <object-name>Tube</object-name>
+  <object-name>Fin_pitots.fwd</object-name>
+  <object-name>fuselage.piece</object-name>
+  <object-name>fuselage.piecein</object-name>
+  <object-name>Canopy</object-name>
+  <object-name>fwdnosegeardoor</object-name>
+  <object-name>nosegeardoorL</object-name>
+  <object-name>nosegeardoorR</object-name>
+  <object-name>LouversL1</object-name>
+  <object-name>LouversL2</object-name>
+  <object-name>LouversL3</object-name>
+  <object-name>LouversL4</object-name>
+  <object-name>LouversL5</object-name>
+  <object-name>LouversR1</object-name>
+  <object-name>LouversR2</object-name>
+  <object-name>LouversR3</object-name>
+  <object-name>LouversR4</object-name>
+  <object-name>LouversR5</object-name>
+  <object-name>UpperIntakeBoxL</object-name>
+  <object-name>UpperIntakeBoxR</object-name>
+  <object-name>leftfusbbox</object-name>
+  <object-name>rightfusbbox</object-name>
+  <object-name>leftfusbox</object-name>
+  <object-name>rightfusbox</object-name>
+  <object-name>IntakeScreenL</object-name>
+  <object-name>IntakeScreenR</object-name>
+  <object-name>fwdgeardoor.L</object-name>
+  <object-name>fwdgeardoor.R</object-name>
+  <object-name>reargeardoor.L</object-name>
+  <object-name>reargeardoor.R</object-name>
+  <object-name>reargeardoor2.L</object-name>
+  <object-name>reargeardoor2.R</object-name>
+  <object-name>Chaff_dispenserL</object-name>
+  <object-name>Chaff_dispenserR</object-name>
+  <object-name>Scoops</object-name>
+  <object-name>Eng_CoverL</object-name>
+  <object-name>Eng_CoverR</object-name>
+  <object-name>Stab_RootL</object-name>
+  <object-name>Stab_RootR</object-name>
+  <object-name>AirbrakeU</object-name>
+  <object-name>AirbrakeD</object-name>
+  <object-name>Parachute_container</object-name>
+  <object-name>Paracont_cover</object-name>
+  <object-name>Gear_jack_body</object-name>
+  <object-name>Gear_jack</object-name>
+  <object-name>Gear_strut</object-name>
+  <object-name>Gear_strut_fork</object-name>
+  <object-name>Nose_oleo</object-name>
+  <object-name>Nose_fork</object-name>
+  <object-name>Fork</object-name>
+  <object-name>Mud_grace_brace</object-name>
+  <object-name>Mud_guard</object-name>
+  <object-name>Nose_Gear_axle</object-name>
+  <object-name>Nose_wheel_L</object-name>
+  <object-name>Nose_wheel_R</object-name>
+  <object-name>FPK-250</object-name>
+  <object-name>FPK-250.G</object-name>
+  <object-name>FP-8.L</object-name>
+  <object-name>FP-8.R</object-name>
+  <object-name>FP-8.GL</object-name>
+  <object-name>FP-8.GR</object-name>
+  <object-name>LERXL</object-name>
+  <object-name>LERXR</object-name>
+  <object-name>WingL</object-name>
+  <object-name>WingR</object-name>
+  <object-name>AileronL</object-name>
+  <object-name>AileronR</object-name>
+  <object-name>FlapL</object-name>
+  <object-name>FlapR</object-name>
+  <object-name>Main_gear_strutL</object-name>
+  <object-name>Main_gear_strutR</object-name>
+  <object-name>Main_gr_oleoL</object-name>
+  <object-name>Main_gr_oleoR</object-name>
+  <object-name>Main_gr_compass_L</object-name>
+  <object-name>Main_gr_compass_R</object-name>
+  <object-name>Main_gr_compass_low_L</object-name>
+  <object-name>Main_gr_compass_low_R</object-name>
+  <object-name>Main_whell_L</object-name>
+  <object-name>Main_whell_R</object-name>
+  <object-name>Main_gr_jack_bodyL</object-name>
+  <object-name>Main_gr_jack_bodyR</object-name>
+  <object-name>Main_gr_jackL</object-name>
+  <object-name>Main_gr_jackR</object-name>
+  <object-name>Fin_pitots</object-name>
+  <object-name>FinL</object-name>
+  <object-name>FinR</object-name>
+  <object-name>RudderL</object-name>
+  <object-name>RudderR</object-name>
+  <object-name>Lower_podL</object-name>
+  <object-name>Lower_podR</object-name>
+  <object-name>upper_podL</object-name>
+  <object-name>upper_podR</object-name>
+  <object-name>StabL</object-name>
+  <object-name>StabR</object-name>
+  <object-name>Insignia</object-name>
+</effect>
+
  <animation>
   <type>material</type>
   <object-name>Pitot</object-name>
@@ -318,14 +427,21 @@
   <object-name>upper_podR</object-name>
   <object-name>StabL</object-name>
   <object-name>StabR</object-name>
-  <object-name>Insignia</object-name>
   <property-base>sim/model/livery</property-base>
   <texture-prop>texture-wings</texture-prop>
   <texture>MiG-29_2.png</texture>
  </animation>
 
+ <animation>
+  <type>material</type>
+  <object-name>Insignia</object-name>
+  <property-base>sim/model/livery</property-base>
+  <texture-prop>texture-insignia</texture-prop>
+  <texture>Insignia.png</texture>
+ </animation>
+
  <effect>
-  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/model-transparent</inherits-from>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/Shaders/glass-reflect-uber</inherits-from>
   <object-name>FrontGlass</object-name>
   <object-name>CanopyGlass</object-name>
   <object-name>KOLS_Glass</object-name>
@@ -336,11 +452,11 @@
   <object-name>Insignia</object-name>
  </effect>
 
- <effect>
+ <!--effect>
   <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
   <object-name>KOLS_Glass</object-name>
   <object-name>KOLS.M</object-name>
- </effect>
+ </effect-->
 
 <!-- Rudders -->
 

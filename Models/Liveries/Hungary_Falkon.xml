@@ -9,6 +9,7 @@
     <bn-type>0</bn-type>
     <texture-fuselage>Liveries/Hungary_Falkon/MiG-29_Hungary_Falkon_1.png</texture-fuselage>
     <texture-wings>Liveries/Hungary_Falkon/MiG-29_Hungary_Falkon_2.png</texture-wings>
+    <texture-insignia>Liveries/Hungary_Falkon/Insignia.png</texture-insignia>
    </livery>
   </model>
  </sim>

@@ -9,6 +9,7 @@
     <bn-type>0</bn-type>
     <texture-fuselage>Liveries/Germany_[20]/MiG-29_GermanyAF_[20]_1.png</texture-fuselage>
     <texture-wings>Liveries/Germany_[20]/MiG-29_GermanyAF_[20]_2.png</texture-wings>
+    <texture-insignia>Liveries/Germany_[20]/Insignia.png</texture-insignia>
    </livery>
   </model>
  </sim>

@@ -9,6 +9,7 @@
     <bn-type>0</bn-type>
     <texture-fuselage>Liveries/RuAF_Pilots_LII/MiG-29_test_pilots_lii_1993_1.png</texture-fuselage>
     <texture-wings>Liveries/RuAF_Pilots_LII/MiG-29_test_pilots_lii_1993_2.png</texture-wings>
+    <texture-insignia>Liveries/RuAF_Pilots_LII/Insignia.png</texture-insignia>
    </livery>
   </model>
  </sim>

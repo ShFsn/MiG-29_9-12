@@ -9,6 +9,7 @@
     <bn-type>0</bn-type>
     <texture-fuselage>Liveries/Poland_[111]_feric/mig-29_poland_[111]_feric_1.png</texture-fuselage>
     <texture-wings>Liveries/Poland_[111]_feric/mig-29_poland_[111]_feric_2.png</texture-wings>
+    <texture-insignia>Liveries/Poland_[111]_feric/Insignia.png</texture-insignia>
    </livery>
   </model>
  </sim>
