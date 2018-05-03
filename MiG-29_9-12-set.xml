@@ -313,6 +313,9 @@
      <blackout-onset-g type="double">5.0</blackout-onset-g>
     </parameters>
    </redout>
+   <rendering>
+    <refl_correction type="string">-0.25</refl_correction>
+   </rendering>
   </rendering>
 
 <!--
