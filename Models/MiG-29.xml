@@ -451,9 +451,10 @@
  </effect>
 
  <effect>
-  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/Shaders/null</inherits-from>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/Shaders/insignia-uber</inherits-from>
   <object-name>Insignia</object-name>
  </effect>
+
  <!--effect>
   <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
   <object-name>KOLS_Glass</object-name>

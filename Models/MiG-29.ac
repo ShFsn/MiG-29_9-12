@@ -2069,7 +2069,7 @@ name "Canopy"
 data 6
 Canopy
 texture "MiG-29_1.png"
-crease 179.000000
+crease 45.473682
 numvert 176
 -3.94313 1.18914 0.000129
 -3.93977 1.18429 -0.091299
