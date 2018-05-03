@@ -205,7 +205,7 @@
  </nasal>
 
  <effect>
-  <inherits-from>Aircraft/MiG-29/Models/Effects/Shaders/reflect-uber</inherits-from>
+  <inherits-from>Aircraft/MiG-29_9-12/Models/Effects/Shaders/reflect-uber</inherits-from>
   <object-name>Pitot</object-name>
   <object-name>Radome</object-name>
   <object-name>fuselage</object-name>
