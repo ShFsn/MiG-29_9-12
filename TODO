@@ -4,8 +4,8 @@ convert all models to 1 sided - done
 make smoke density dependant on revs - already is, fixed alpha
 replace smoke texture with something more random, and more grey
 ALS afterburner effect - done
-ALS glass effect
-ALS fuselage effect
+ALS glass effect - done
+ALS fuselage effect - done
 Add wing drop tanks
 add engine exterior sounds
 add engine rumble for interior view
