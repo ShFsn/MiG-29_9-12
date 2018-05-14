@@ -2413,13 +2413,34 @@
        </product>
     </function>
 
-    <function name="aero/coefficient/Cldsta">
-       <description>Roll_moment_due_to_stabilator</description>
+    <function name="aero/coefficient/Cldlsta">
+       <description>Roll_moment_due_to_left_stabilator</description>
        <product>
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
           <property>metrics/bw-ft</property>
           <property>fcs/left-eleron-pos-norma</property>
+          <value>0.5</value>
+          <table>
+            <independentVar lookup="row">velocities/mach</independentVar>
+            <tableData>
+              0.0    0.120
+              1.0    0.100
+              2.0    0.040
+              3.0    0.040
+            </tableData>
+          </table>
+       </product>
+    </function>
+
+    <function name="aero/coefficient/Cldrsta">
+       <description>Roll_moment_due_to_right_stabilator</description>
+       <product>
+          <property>aero/qbar-psf</property>
+          <property>metrics/Sw-sqft</property>
+          <property>metrics/bw-ft</property>
+          <property>fcs/right-eleron-pos-norma</property>
+          <value>-0.5</value>
           <table>
             <independentVar lookup="row">velocities/mach</independentVar>
             <tableData>

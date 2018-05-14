@@ -1336,6 +1336,17 @@ adjust speed-pid to right state all time. -->
                 <max>1.0</max>
               </clipto>
             </pid>
+
+            <pure_gain name="alt roll damper">
+              <input>velocities/p-rad_sec</input>
+              <gain>-1.0</gain>
+              <clipto>
+                <min>-1.0</min>
+                <max>1.0</max>
+              </clipto>
+              <output>ap/roll-damper-cmd</output>
+            </pure_gain>
+
 <!--
             <lag_filter name="ap/roll-lf">
               <input>fcs/aileron-cmd-norm</input>
@@ -1349,7 +1360,7 @@ adjust speed-pid to right state all time. -->
 	    
 <!--Output-->            
             <summer name="ap/roll-out">
-              <input>ap/roll-damper</input>
+              <input>ap/roll-damper-cmd</input>
               <input>ap/roll-pid-switched</input>
 <!--<input>ap/roll-suu</input>-->
               <clipto>
@@ -1357,7 +1368,7 @@ adjust speed-pid to right state all time. -->
                 <max>1</max>
               </clipto>
             </summer>
-	    
+
 	    <!--Turbulence switch-->	    
             <scheduled_gain name="ap/roll-turb">
               <input>ap/roll-out</input>
