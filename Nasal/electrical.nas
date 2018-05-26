@@ -1087,7 +1087,7 @@ DCAlternatorClass.rpm_handler = func {
     if( rpm < 55.0 ) { volts = 0.0; }
     else volts = me.ideal_volts;
     me.volts.setValue( volts );
-    if( me.bus != nil ) { setprop(me.bus.volts, volts ); }
+    if( me.bus != nil ) { me.bus.volts.setDoubleValue(volts ); }
 }
 
 DCAlternatorClass.get_output_amps = func(src ){
@@ -1146,7 +1146,7 @@ ACAlternatorClass.rpm_handler = func {
     if( rpm < 55.0 ) { volts = 0.0; }
     else { volts = me.ideal_volts; }
     me.volts.setValue( volts );
-    if( me.bus != nil ) { setprop(me.bus.volts, volts ); }
+    if( me.bus != nil ) { me.bus.volts.setDoubleValue(volts ); }
 }
 
 ACAlternatorClass.get_output_amps = func(src ){
@@ -1204,7 +1204,7 @@ ACAlternator2Class.rpm_handler = func {
     if( rpm < 55.0 ) { volts = 0.0; }
     else { volts = me.ideal_volts; }
     me.volts.setValue( volts );
-    if( me.bus != nil ) { setprop(me.bus.volts, volts ); }
+    if( me.bus != nil ) { me.bus.volts.setDoubleValue(volts ); }
 }
 
 ACAlternator2Class.get_output_amps = func(src ){
