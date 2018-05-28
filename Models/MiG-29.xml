@@ -8,7 +8,9 @@
 <PropertyList>
 
  <path>MiG-29.ac</path>
-
+ <sound>
+    <path>Aircraft/MiG-29_9-12/Sounds/mp-sound.xml</path>
+  </sound>
  <model>
   <name>Cockpit</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Cockpit.xml</path>

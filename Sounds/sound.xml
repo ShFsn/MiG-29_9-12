@@ -4,10 +4,28 @@
 
  <fx>
 
-  <!-- Двигатели -->
+
+  <engine>
+   <name>Engine3</name>
+   <path>Sounds/jet.wav</path>
+   <mode>looped</mode>
+   <volume>
+    <property>/mig29/systems/engines/Sn2_GTDE</property>
+    <factor>0.012</factor>
+   </volume>
+   <volume>
+    <factor>0.5</factor>
+   </volume>
+   <pitch>
+    <property>/engines/engine[2]/n2</property>
+    <factor>0.03</factor>
+   </pitch>
+  </engine>
+
+
   <engine>
    <name>Engine1</name>
-   <path>Aircraft/MiG-29_9-12/Sounds/engines/RD-33.wav</path>
+   <path>Aircraft/MiG-29_9-12/Sounds/engines/RD-33_cleaned_cropped.wav</path>
    <mode>looped</mode>
    <volume>
     <property>/mig29/systems/engines/Sn2_Left</property>
@@ -22,7 +40,7 @@
 
   <engine>
    <name>Engine2</name>
-   <path>Aircraft/MiG-29_9-12/Sounds/engines/RD-33.wav</path>
+   <path>Aircraft/MiG-29_9-12/Sounds/engines/RD-33_cleaned_cropped.wav</path>
    <mode>looped</mode>
    <volume>
     <property>/mig29/systems/engines/Sn2_Right</property>
@@ -35,21 +53,217 @@
    </pitch>
   </engine>
 
+
   <engine>
-   <name>Engine3</name>
-   <path>Sounds/jet.wav</path>
+   <name>thrust_1</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_no_mids.wav</path>
    <mode>looped</mode>
    <volume>
-    <property>/mig29/systems/engines/Sn2_GTDE</property>
+    <property>/engines/engine[0]/n2</property>
+    <factor>0.013</factor>
+   </volume>
+  </engine>
+
+  <engine>
+   <name>thrust_2</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_no_mids.wav</path>
+   <mode>looped</mode>
+   <volume>
+    <property>/engines/engine[1]/n2</property>
+    <factor>0.013</factor>
+   </volume>
+  </engine>
+
+
+
+
+
+
+  <engine>
+   <name>thrust_1_intake</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_front.wav</path>
+   <mode>looped</mode>
+   <volume>
+    <property>/engines/engine[0]/n2</property>
+    <factor>0.013</factor>
+   </volume>
+   <position>
+    <x>0</x>
+    <y>-2.01</y>
+    <z>0.01</z>
+   </position>
+   <orientation>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <inner-angle>200.0</inner-angle>
+    <outer-angle>360.0</outer-angle>
+    <outer-gain>0.25</outer-gain>
+   </orientation>
+  </engine>
+
+  <engine>
+   <name>thrust_2_intake</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_front.wav</path>
+   <mode>looped</mode>
+   <volume>
+    <property>/engines/engine[1]/n2</property>
+    <factor>0.013</factor>
+   </volume>
+   <position>
+    <x>0</x>
+    <y>2.01</y>
+    <z>0.01</z>
+   </position>
+   <orientation>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <inner-angle>200.0</inner-angle>
+    <outer-angle>360.0</outer-angle>
+    <outer-gain>0.25</outer-gain>
+   </orientation>
+  </engine>
+
+
+
+
+
+  <engine>
+   <name>thrust_MIL_1</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_max.wav</path>
+   <mode>looped</mode>
+   <volume>
+    <property>engines/engine[0]/n2</property>
+    <factor>0.006</factor>
+    <offset>-0.5</offset>
+   </volume>
+   <volume>
+    <factor>1.8</factor>
+   </volume>
+
+   <pitch>
+    <property>engines/engine[0]/n2</property>
+    <factor>0.001</factor>
+    <offset>-1.4</offset>
+   </pitch>
+   <pitch>
+    <factor>1.8</factor>
+   </pitch>
+
+   <!--position>
+    <x>4.6</x>
+    <y>-2.01</y>
+    <z>0.01</z>
+   </position>
+   <orientation>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <inner-angle>200.0</inner-angle>
+    <outer-angle>360.0</outer-angle>
+    <outer-gain>0.25</outer-gain>
+   </orientation-->
+
+  </engine>
+
+  <engine>
+   <name>thrust_MIL_2</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_max.wav</path>
+   <mode>looped</mode>
+   <volume>
+    <property>/engines/engine[1]/n2</property>
+    <factor>0.006</factor>
+    <offset>-0.5</offset>
+   </volume>
+   <volume>
+    <factor>1.8</factor>
+   </volume>
+
+   <pitch>
+    <property>engines/engine[1]/n2</property>
+    <factor>0.001</factor>
+    <offset>-1.4</offset>
+   </pitch>
+   <pitch>
+    <factor>1.8</factor>
+   </pitch>
+
+   <!--position>
+    <x>4.6</x>
+    <y>2.01</y>
+    <z>0.01</z>
+   </position>
+   <orientation>
+    <x>1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <inner-angle>200.0</inner-angle>
+    <outer-angle>360.0</outer-angle>
+    <outer-gain>0.25</outer-gain>
+   </orientation-->
+
+  </engine>
+
+
+
+
+  <exhaust_distance>
+   <name>exhaust_distance</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/afterburner_distance.wav</path>
+   <mode>looped</mode>
+   <condition>
+    <not>
+      <property>sim/current-view/internal</property>
+    </not>
+   </condition>
+   <volume>
+    <property>velocities/airspeed-kt</property>
+    <factor>0.0025</factor>
+   </volume>
+
+   <position>
+    <x>0.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+   </position>
+   <orientation>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <inner-angle>200.0</inner-angle>
+    <outer-angle>360.0</outer-angle>
+    <outer-gain>0.25</outer-gain>
+   </orientation>
+
+   <reference-dist>100</reference-dist>
+   <max-dist>6000</max-dist>
+  </exhaust_distance>
+
+
+
+
+
+
+
+
+
+
+  <!--engine>
+   <name>Engine3</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust.wav</path>
+   <mode>looped</mode>
+   <volume>
+    <property>/mig29/systems/engines/n2</property>
     <factor>0.012</factor>
    </volume>
    <pitch>
     <property>/engines/engine[2]/n2</property>
     <factor>0.03</factor>
    </pitch>
-  </engine>
+  </engine-->
 
-  <engine>
+  <!--engine>
    <name>whine</name>
    <path>Sounds/whine.wav</path>
    <mode>looped</mode>
@@ -67,8 +281,24 @@
     <type>lin</type>
     <factor>0.008</factor>
    </pitch>
-  </engine>
-  <rumble>
+  </engine-->
+
+  <!--outside>
+   <name>outside_ambience</name>
+   <path>Sounds/wind.wav</path>
+   <mode>looped</mode>
+   <condition>
+    <not>
+      <property>sim/current-view/internal</property>
+    </not>
+   </condition>
+   <volume>
+    <factor>0.1</factor>
+   </volume>
+  </outside-->
+
+
+  <!--rumble>
    <name>rumble</name>
    <path>Sounds/rumble.wav</path>
    <mode>looped</mode>
@@ -85,7 +315,7 @@
     <factor>0.012</factor>
     <max>1.0</max>
    </volume>
-  </rumble>
+  </rumble-->
 
   <!-- Шасси -->
   <gear>
@@ -194,6 +424,8 @@
     <max>0.9</max>
    </volume>
   </flap>
+
+
   <wind>
    <name>wind</name>
    <path>Sounds/wind.wav</path>
