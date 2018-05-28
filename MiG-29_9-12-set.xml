@@ -25,9 +25,33 @@
    <model>4</model>
   </rating>
 
-  <startup>
-   <splash-texture>Aircraft/MiG-29_9-12/splash.png</splash-texture>
-  </startup>
+  <previews>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/Mig-29-1.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/Mig-29-2.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/Mig-29-3.jpg</path>
+      </preview>
+   <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/Mig-29-4.jpg</path>
+      </preview>
+   <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/Mig-29-5.jpg</path>
+      </preview>
+    </previews>
 
   <sound>
    <path>Aircraft/MiG-29_9-12/Sounds/sound.xml</path>

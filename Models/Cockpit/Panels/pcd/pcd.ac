@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "glow" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "case" rgb 1 1 1  amb 0.7 0.7 0.7  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "case" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 9
 OBJECT poly
@@ -2734,9 +2734,9 @@ numsurf 1
 SURF 0x0
 mat 1
 refs 4
-0 1 3.7253e-08
+0 1 3.7253e-008
 3 1 1
-2 2.98023e-07 1
+2 2.98023e-007 1
 1 0 0
 kids 0
 OBJECT poly
@@ -2754,9 +2754,9 @@ numsurf 1
 SURF 0x0
 mat 1
 refs 4
-0 7.4506e-08 0.75
+0 7.4506e-008 0.75
 2 0 0
-3 1 5.2899e-08
+3 1 5.2899e-008
 1 1 0.75
 kids 0
 OBJECT poly
@@ -2776,8 +2776,8 @@ mat 1
 refs 4
 0 1 0
 3 1 0.75
-2 3.7253e-08 0.75
-1 0 7.4506e-08
+2 3.7253e-008 0.75
+1 0 7.4506e-008
 kids 0
 OBJECT poly
 name "pcd.lever"

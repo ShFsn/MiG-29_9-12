@@ -1,7 +1,7 @@
 AC3Db
 MATERIAL "face" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "glass" rgb 0.8 0.8 0.8  amb 1 1 1  emis 0 0 0  spec 1 1 1  shi 64  trans 0.9
-MATERIAL "bezel" rgb 1 1 1  amb 0.7 0.7 0.7  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "glass" rgb 0.8 0.8 0.8  amb 0.8 0.8 0.8  emis 0 0 0  spec 1 1 1  shi 64  trans 0.9
+MATERIAL "bezel" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 5
 OBJECT poly
@@ -1045,8 +1045,8 @@ mat 0
 refs 4
 0 1 0
 3 1 1
-2 1.86264e-07 1
-1 0 1.86264e-07
+2 1.86264e-007 1
+1 0 1.86264e-007
 kids 0
 OBJECT poly
 name "screws"

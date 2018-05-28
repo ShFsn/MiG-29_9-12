@@ -1,7 +1,7 @@
 AC3Db
 MATERIAL "face" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 MATERIAL "glass" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.4 0.4 0.4  shi 64  trans 0.9
-MATERIAL "bezel" rgb 1 1 1  amb 0.4 0.4 0.4  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "bezel" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 6
 OBJECT poly
@@ -1296,8 +1296,8 @@ mat 0
 refs 4
 0 1 0
 3 1 1
-2 1.86264e-07 1
-1 0 1.49012e-07
+2 1.86264e-007 1
+1 0 1.49012e-007
 kids 0
 OBJECT poly
 name "US-1600.glass"

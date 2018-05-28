@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "case" rgb 1 1 1  amb 0.7 0.7 0.7  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "case" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 6
 OBJECT poly
@@ -1771,9 +1771,9 @@ numsurf 1
 SURF 0x0
 mat 0
 refs 4
-0 7.4506e-08 0.65
+0 7.4506e-008 0.65
 3 0 0
-2 1 7.4506e-08
+2 1 7.4506e-008
 1 1 0.65
 kids 0
 OBJECT poly
@@ -1794,7 +1794,7 @@ refs 4
 0 1 0
 2 1 0.65
 3 0 0.65
-1 0 5.21541e-07
+1 0 5.21541e-007
 kids 0
 OBJECT poly
 name "RUFCcp.lever"

@@ -1,5 +1,5 @@
 AC3Db
-MATERIAL "case" rgb 1 1 1  amb 0.7 0.7 0.7  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
+MATERIAL "case" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
 OBJECT world
 kids 14
 OBJECT poly
@@ -4395,7 +4395,7 @@ numsurf 1
 SURF 0x0
 mat 0
 refs 4
-0 9.7181e-08 1.29575e-07
+0 9.7181e-008 1.29575e-007
 2 1 0
 3 1 0.869565
 1 0 0.869565
@@ -4415,10 +4415,10 @@ numsurf 1
 SURF 0x0
 mat 0
 refs 4
-2 0 1.94363e-07
+2 0 1.94363e-007
 0 1 0
 1 1 0.869565
-3 2.59151e-07 0.869565
+3 2.59151e-007 0.869565
 kids 0
 OBJECT poly
 name "dac.cz3"
@@ -4438,7 +4438,7 @@ refs 4
 0 1 0
 3 1 0.5
 2 0 0.5
-1 2.23517e-07 7.4506e-08
+1 2.23517e-007 7.4506e-008
 kids 0
 OBJECT poly
 name "dac.cz4"
@@ -4478,7 +4478,7 @@ refs 4
 0 1 0
 3 1 0.3
 2 0 0.3
-1 2.23517e-07 1.49012e-07
+1 2.23517e-007 1.49012e-007
 kids 0
 OBJECT poly
 name "dac.cz6"
@@ -4495,10 +4495,10 @@ numsurf 1
 SURF 0x0
 mat 0
 refs 4
-0 1 1.49012e-07
+0 1 1.49012e-007
 3 1 0.3
 2 0 0.3
-1 1.49012e-07 0
+1 1.49012e-007 0
 kids 0
 OBJECT poly
 name "dac.lever1"

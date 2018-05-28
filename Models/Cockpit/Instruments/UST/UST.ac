@@ -1,7 +1,7 @@
 AC3Db
-MATERIAL "case" rgb 0.8 0.8 0.8  amb 0.7 0.7 0.7  emis 0 0 0  spec 1 1 1  shi 64  trans 0
-MATERIAL "L1" rgb 0.8 0.8 0.8  amb 1 1 1  emis 1 1 1  spec 1 1 1  shi 64  trans 0
-MATERIAL "tablo" rgb 0.8 0.8 0.8  amb 0.3 0.3 0.3  emis 0 0 0  spec 1 1 1  shi 64  trans 0
+MATERIAL "case" rgb 0.8 0.8 0.8  amb 0.8 0.8 0.8  emis 0 0 0  spec 1 1 1  shi 64  trans 0
+MATERIAL "L1" rgb 0.8 0.8 0.8  amb 0.8 0.8 0.8  emis 1 1 1  spec 1 1 1  shi 64  trans 0
+MATERIAL "tablo" rgb 0.8 0.8 0.8  amb 0.8 0.8 0.8  emis 0 0 0  spec 1 1 1  shi 64  trans 0
 OBJECT world
 kids 41
 OBJECT poly
