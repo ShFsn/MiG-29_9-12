@@ -289,13 +289,13 @@
    <int n="23" alias="/controls/armament/station[7]/release-all"/>
    <int n="24" alias="/controls/armament/station[8]/jettison-all"/>
    <int n="25" alias="/controls/armament/station[8]/release-all"/>
-   <int n="26" alias="/mig29/weapons/podv/PTB"/>
-   <int n="27" alias="/mig29/weapons/podv/T1"/>
-   <int n="28" alias="/mig29/weapons/podv/T2"/>
-   <int n="29" alias="/mig29/weapons/podv/T3"/>
-   <int n="30" alias="/mig29/weapons/podv/T4"/>
-   <int n="31" alias="/mig29/weapons/podv/T5"/>
-   <int n="32" alias="/mig29/weapons/podv/T6"/>
+   <short n="26" alias="/mig29/weapons/podv/PTB"/>
+   <short n="27" alias="/mig29/weapons/podv/T1"/>
+   <short n="28" alias="/mig29/weapons/podv/T2"/>
+   <short n="29" alias="/mig29/weapons/podv/T3"/>
+   <short n="30" alias="/mig29/weapons/podv/T4"/>
+   <short n="31" alias="/mig29/weapons/podv/T5"/>
+   <short n="32" alias="/mig29/weapons/podv/T6"/>
    <float n="11" alias="/engines/engine[0]/augmentation"/>
    <float n="12" alias="/engines/engine[0]/nozzle-pos-norm"/>
    <float n="13" alias="/engines/engine[1]/augmentation"/>

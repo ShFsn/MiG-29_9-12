@@ -226,19 +226,19 @@
    rplayer.getNode("mig29/systems/lighting/ANObright", 1).
      alias(rplayer.getNode("sim/multiplay/generic/float[10]"));
    rplayer.getNode("mig29/weapons/podv/PTB", 1).
-     alias(rplayer.getNode("sim/multiplay/generic/int[26]"));
+     alias(rplayer.getNode("sim/multiplay/generic/short[26]"));
    rplayer.getNode("mig29/weapons/podv/T1", 1).
-     alias(rplayer.getNode("sim/multiplay/generic/int[27]"));
+     alias(rplayer.getNode("sim/multiplay/generic/short[27]"));
    rplayer.getNode("mig29/weapons/podv/T2", 1).
-     alias(rplayer.getNode("sim/multiplay/generic/int[28]"));
+     alias(rplayer.getNode("sim/multiplay/generic/short[28]"));
    rplayer.getNode("mig29/weapons/podv/T3", 1).
-     alias(rplayer.getNode("sim/multiplay/generic/int[29]"));
+     alias(rplayer.getNode("sim/multiplay/generic/short[29]"));
    rplayer.getNode("mig29/weapons/podv/T4", 1).
-     alias(rplayer.getNode("sim/multiplay/generic/int[30]"));
+     alias(rplayer.getNode("sim/multiplay/generic/short[30]"));
    rplayer.getNode("mig29/weapons/podv/T5", 1).
-     alias(rplayer.getNode("sim/multiplay/generic/int[31]"));
+     alias(rplayer.getNode("sim/multiplay/generic/short[31]"));
    rplayer.getNode("mig29/weapons/podv/T6", 1).
-     alias(rplayer.getNode("sim/multiplay/generic/int[32]"));
+     alias(rplayer.getNode("sim/multiplay/generic/short[32]"));
    ##############################################################################
   </load>
   <unload>
