@@ -41,15 +41,20 @@
         <splash type="bool">true</splash>
         <path>Splashscreen/Mig-29-3.jpg</path>
       </preview>
-   <preview>
+      <preview>
         <type>exterior</type>
         <splash type="bool">true</splash>
         <path>Splashscreen/Mig-29-4.jpg</path>
       </preview>
-   <preview>
+      <preview>
         <type>exterior</type>
         <splash type="bool">true</splash>
         <path>Splashscreen/Mig-29-5.jpg</path>
+      </preview>
+      <preview>
+        <type>exterior</type>
+        <splash type="bool">true</splash>
+        <path>Splashscreen/Mig-29-6.jpg</path>
       </preview>
     </previews>
 
