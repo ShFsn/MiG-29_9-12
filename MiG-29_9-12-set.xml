@@ -270,9 +270,13 @@
    <float n="4" alias="/mig29/systems/CS/Parachute/pos-norm"/>
    <float n="5" alias="/mig29/systems/CS/Stabilator/left-pos-norm"/>
    <float n="6" alias="/mig29/systems/CS/Stabilator/right-pos-norm"/>
+   <float n="7" alias="/mig29/instrumentation/electrical/v27"/>
+   <float n="8" alias="/environment/relative-humidity"/>
+   <float n="9" alias="/environment/temperature-degc"/>
    <int n="7" alias="/mig29/systems/lighting/taxi"/>
    <int n="8" alias="/mig29/systems/lighting/landing"/>
    <int n="9" alias="/mig29/systems/lighting/ANO"/>
+   <int n="10" alias="/mig29/systems/lighting/ANOmode"/>
    <float n="10" alias="/mig29/systems/lighting/ANObright"/>
    <int type="int" n="11">0</int>
    <int n="12" alias="/mig29/systems/BVP/release"/>
@@ -304,6 +308,8 @@
    <float n="16" alias="/mig29/systems/engines/Sm_n2_Left"/>
    <float n="17" alias="/mig29/systems/engines/Sm_n2_Right"/>
    <float n="18" alias="/mig29/systems/engines/Sn2_GTDE"/>
+   <float n="19" alias="/orientation/alpha-deg"/>
+   <float n="20" alias="/velocities/airspeed-kt"/>
   </generic>
  </multiplay>
 

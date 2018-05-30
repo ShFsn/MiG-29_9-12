@@ -201,6 +201,12 @@
      alias(rplayer.getNode("sim/multiplay/generic/float[5]"));
    rplayer.getNode("mig29/systems/CS/Stabilator/right-pos-norm", 1).
      alias(rplayer.getNode("sim/multiplay/generic/float[6]"));
+   rplayer.getNode("mig29/instrumentation/electrical/v27", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[7]"));
+   rplayer.getNode("environment/relative-humidity", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[8]"));
+   rplayer.getNode("environment/temperature-degc", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[9]"));
    rplayer.getNode("engines/engine[0]/augmentation", 1).
      alias(rplayer.getNode("sim/multiplay/generic/float[11]"));
    rplayer.getNode("engines/engine[0]/nozzle-pos-norm", 1).
@@ -217,12 +223,18 @@
      alias(rplayer.getNode("sim/multiplay/generic/float[17]"));
    rplayer.getNode("mig29/systems/engines/Sn2_GTDE", 1).
      alias(rplayer.getNode("sim/multiplay/generic/float[18]"));
+   rplayer.getNode("orientation/alpha-deg", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[19]"));
+   rplayer.getNode("velocities/airspeed-kt", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[20]"));
    rplayer.getNode("mig29/systems/lighting/taxi", 1).
      alias(rplayer.getNode("sim/multiplay/generic/int[7]"));
    rplayer.getNode("mig29/systems/lighting/landing", 1).
      alias(rplayer.getNode("sim/multiplay/generic/int[8]"));
    rplayer.getNode("mig29/systems/lighting/ANO", 1).
      alias(rplayer.getNode("sim/multiplay/generic/int[9]"));
+   rplayer.getNode("mig29/systems/lighting/ANOmode", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[10]"));
    rplayer.getNode("mig29/systems/lighting/ANObright", 1).
      alias(rplayer.getNode("sim/multiplay/generic/float[10]"));
    rplayer.getNode("mig29/weapons/podv/PTB", 1).
