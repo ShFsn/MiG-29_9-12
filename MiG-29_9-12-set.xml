@@ -298,8 +298,12 @@
    <int n="32" alias="/mig29/weapons/podv/T6"/>
    <float n="11" alias="/engines/engine[0]/augmentation"/>
    <float n="12" alias="/engines/engine[0]/nozzle-pos-norm"/>
-   <float n="13" alias="/engines/engine[0]/augmentation"/>
-   <float n="14" alias="/engines/engine[0]/nozzle-pos-norm"/>
+   <float n="13" alias="/engines/engine[1]/augmentation"/>
+   <float n="14" alias="/engines/engine[1]/nozzle-pos-norm"/>
+   <float n="15" alias="/fdm/jsbsim/fcs/steer-pos-deg"/>
+   <float n="16" alias="/mig29/systems/engines/Sm_n2_Left"/>
+   <float n="17" alias="/mig29/systems/engines/Sm_n2_Right"/>
+   <float n="18" alias="/mig29/systems/engines/Sn2_GTDE"/>
   </generic>
  </multiplay>
 

@@ -9,7 +9,7 @@
 
  <path>MiG-29.ac</path>
  <sound>
-    <path>Aircraft/MiG-29_9-12/Sounds/mp-sound.xml</path>
+    <path>Aircraft/MiG-29_9-12/Sounds/mp_sound.xml</path>
   </sound>
  <model>
   <name>Cockpit</name>
@@ -195,10 +195,50 @@
      alias(rplayer.getNode("sim/multiplay/generic/float[2]"));
    rplayer.getNode("mig29/systems/CS/LERX/pos-norm", 1).
      alias(rplayer.getNode("sim/multiplay/generic/float[3]"));
+   rplayer.getNode("mig29/systems/CS/Parachute/pos-norm", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[4]"));
    rplayer.getNode("mig29/systems/CS/Stabilator/left-pos-norm", 1).
      alias(rplayer.getNode("sim/multiplay/generic/float[5]"));
    rplayer.getNode("mig29/systems/CS/Stabilator/right-pos-norm", 1).
      alias(rplayer.getNode("sim/multiplay/generic/float[6]"));
+   rplayer.getNode("engines/engine[0]/augmentation", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[11]"));
+   rplayer.getNode("engines/engine[0]/nozzle-pos-norm", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[12]"));
+   rplayer.getNode("engines/engine[1]/augmentation", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[13]"));
+   rplayer.getNode("engines/engine[1]/nozzle-pos-norm", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[14]"));
+   rplayer.getNode("fdm/jsbsim/fcs/steer-pos-deg", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[15]"));
+   rplayer.getNode("mig29/systems/engines/Sm_n2_Left", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[16]"));
+   rplayer.getNode("mig29/systems/engines/Sm_n2_Right", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[17]"));
+   rplayer.getNode("mig29/systems/engines/Sn2_GTDE", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[18]"));
+   rplayer.getNode("mig29/systems/lighting/taxi", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[7]"));
+   rplayer.getNode("mig29/systems/lighting/landing", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[8]"));
+   rplayer.getNode("mig29/systems/lighting/ANO", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[9]"));
+   rplayer.getNode("mig29/systems/lighting/ANObright", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/float[10]"));
+   rplayer.getNode("mig29/weapons/podv/PTB", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[26]"));
+   rplayer.getNode("mig29/weapons/podv/T1", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[27]"));
+   rplayer.getNode("mig29/weapons/podv/T2", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[28]"));
+   rplayer.getNode("mig29/weapons/podv/T3", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[29]"));
+   rplayer.getNode("mig29/weapons/podv/T4", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[30]"));
+   rplayer.getNode("mig29/weapons/podv/T5", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[31]"));
+   rplayer.getNode("mig29/weapons/podv/T6", 1).
+     alias(rplayer.getNode("sim/multiplay/generic/int[32]"));
    ##############################################################################
   </load>
   <unload>
@@ -595,7 +635,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LERXL</object-name>
-  <property>fdm/jsbsim/fcs/LERX-pos-norm</property>
+  <property>mig29/systems/CS/LERX/pos-norm</property>
   <factor>20</factor>
   <axis>
    <x1-m> 0.615</x1-m>
@@ -609,7 +649,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LERXR</object-name>
-  <property>fdm/jsbsim/fcs/LERX-pos-norm</property>
+  <property>mig29/systems/CS/LERX/pos-norm</property>
   <factor>-20</factor>
   <axis>
    <x1-m> 0.615</x1-m>
@@ -1907,7 +1947,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversL1</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <property>mig29/systems/CS/Inlet/left-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -1924,7 +1964,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversL2</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <property>mig29/systems/CS/Inlet/left-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -1941,7 +1981,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversL3</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <property>mig29/systems/CS/Inlet/left-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -1958,7 +1998,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversL4</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <property>mig29/systems/CS/Inlet/left-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -1975,7 +2015,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversL5</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-left</property>
+  <property>mig29/systems/CS/Inlet/left-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -1993,7 +2033,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversR1</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <property>mig29/systems/CS/Inlet/right-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -2010,7 +2050,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversR2</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <property>mig29/systems/CS/Inlet/right-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -2027,7 +2067,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversR3</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <property>mig29/systems/CS/Inlet/right-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -2044,7 +2084,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversR4</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <property>mig29/systems/CS/Inlet/right-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -2061,7 +2101,7 @@
  <animation>
   <type>rotate</type>
   <object-name>LouversR5</object-name>
-  <property>fdm/jsbsim/systems/intake/pos-right</property>
+  <property>mig29/systems/CS/Inlet/right-pos-norm</property>
   <interpolation>
    <entry><ind>1.4</ind><dep>60</dep></entry>
    <entry><ind>1.2</ind><dep> 0</dep></entry>
@@ -2081,7 +2121,7 @@
  <animation>
   <type>rotate</type>
    <object-name>IntakeScreenL</object-name>
-   <property>fdm/jsbsim/systems/intake/pos-left</property>
+   <property>mig29/systems/CS/Inlet/left-pos-norm</property>
   <interpolation>
    <entry><ind>1.438679245</ind><dep> 0.0</dep></entry>
    <entry><ind>0.0        </ind><dep>30.5</dep></entry>
@@ -2098,7 +2138,7 @@
  <animation>
   <type>rotate</type>
    <object-name>IntakeScreenR</object-name>
-   <property>fdm/jsbsim/systems/intake/pos-right</property>
+   <property>mig29/systems/CS/Inlet/right-pos-norm</property>
   <interpolation>
    <entry><ind>1.438679245</ind><dep> 0.0</dep></entry>
    <entry><ind>0.0        </ind><dep>30.5</dep></entry>
@@ -2131,7 +2171,7 @@
   <object-name>MirrorR.Case</object-name>
   <object-name>MirrorR.Rt</object-name>
   <object-name>MirrorR.M</object-name>
-  <property>fdm/jsbsim/fcs/canopy-pos-norm</property>
+  <property>mig29/systems/CS/Canopy/pos-norm</property>
   <interpolation>
    <entry><ind>0.0</ind><dep>0</dep></entry>
    <entry><ind>0.1</ind><dep>5</dep></entry>
@@ -4090,7 +4130,7 @@
       <value>1</value>
      </equals>
      <equals>
-      <property>fdm/jsbsim/fcs/canopy-pos-norm</property>
+      <property>mig29/systems/CS/Canopy/pos-norm</property>
       <value>1</value>
      </equals>
     </and>
