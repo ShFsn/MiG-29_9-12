@@ -263,19 +263,19 @@
 
  <multiplay>
   <generic>
-   <float n="0" alias="mig29/systems/CS/Canopy/pos-norm"/>
-   <float n="1" alias="mig29/systems/CS/Inlet/left-pos-norm"/>
-   <float n="2" alias="mig29/systems/CS/Inlet/right-pos-norm"/>
-   <float n="3" alias="mig29/systems/CS/LERX/pos-norm"/>
-   <float n="4" alias="mig29/systems/CS/Parachute/pos-norm"/>
-   <float n="5" alias="mig29/systems/CS/Stabilator/left-pos-norm"/>
-   <float n="6" alias="mig29/systems/CS/Stabilator/right-pos-norm"/>
-   <int n="7" alias="mig29/systems/lighting/taxi"/>
-   <int n="8" alias="mig29/systems/lighting/landing"/>
-   <int n="9" alias="mig29/systems/lighting/ANO"/>
-   <float n="10" alias="mig29/systems/lighting/ANObright"/>
+   <float n="0" alias="/mig29/systems/CS/Canopy/pos-norm"/>
+   <float n="1" alias="/mig29/systems/CS/Inlet/left-pos-norm"/>
+   <float n="2" alias="/mig29/systems/CS/Inlet/right-pos-norm"/>
+   <float n="3" alias="/mig29/systems/CS/LERX/pos-norm"/>
+   <float n="4" alias="/mig29/systems/CS/Parachute/pos-norm"/>
+   <float n="5" alias="/mig29/systems/CS/Stabilator/left-pos-norm"/>
+   <float n="6" alias="/mig29/systems/CS/Stabilator/right-pos-norm"/>
+   <int n="7" alias="/mig29/systems/lighting/taxi"/>
+   <int n="8" alias="/mig29/systems/lighting/landing"/>
+   <int n="9" alias="/mig29/systems/lighting/ANO"/>
+   <float n="10" alias="/mig29/systems/lighting/ANObright"/>
    <int type="int" n="11">0</int>
-   <int n="12" alias="mig29/systems/BVP/release"/>
+   <int n="12" alias="/mig29/systems/BVP/release"/>
    <int n="13" alias="/controls/armament/trigger"/>
    <int n="14" alias="/controls/armament/station[3]/jettison-all"/>
    <int n="15" alias="/controls/armament/station[3]/release-all"/>
@@ -289,13 +289,13 @@
    <int n="23" alias="/controls/armament/station[7]/release-all"/>
    <int n="24" alias="/controls/armament/station[8]/jettison-all"/>
    <int n="25" alias="/controls/armament/station[8]/release-all"/>
-   <int n="26" alias="mig29/weapons/podv/PTB"/>
-   <int n="27" alias="mig29/weapons/podv/T1"/>
-   <int n="28" alias="mig29/weapons/podv/T2"/>
-   <int n="29" alias="mig29/weapons/podv/T3"/>
-   <int n="30" alias="mig29/weapons/podv/T4"/>
-   <int n="31" alias="mig29/weapons/podv/T5"/>
-   <int n="32" alias="mig29/weapons/podv/T6"/>
+   <int n="26" alias="/mig29/weapons/podv/PTB"/>
+   <int n="27" alias="/mig29/weapons/podv/T1"/>
+   <int n="28" alias="/mig29/weapons/podv/T2"/>
+   <int n="29" alias="/mig29/weapons/podv/T3"/>
+   <int n="30" alias="/mig29/weapons/podv/T4"/>
+   <int n="31" alias="/mig29/weapons/podv/T5"/>
+   <int n="32" alias="/mig29/weapons/podv/T6"/>
    <float n="11" alias="/engines/engine[0]/augmentation"/>
    <float n="12" alias="/engines/engine[0]/nozzle-pos-norm"/>
    <float n="13" alias="/engines/engine[0]/augmentation"/>
