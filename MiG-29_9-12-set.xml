@@ -10,16 +10,16 @@
  <sim>
 
   <description>MiG-29 (9-12) - lightweight frontline fighter</description>
-  <author>Sergey "Mercenary_Mercury" Salov (FDM, cockpit, submodels, systems), Enrique Laso Leon (external model), Oleg Ard (Liveries), Geed (Sounds)</author>
+  <author>Sergey "Mercenary_Mercury" Salov (FDM, cockpit, submodels, systems), Enrique Laso Leon (external model), Oleg Ard (Liveries), Geed (Sounds), FGUK crew (tweaks)</author>
 
   <flight-model>jsb</flight-model>
   <aero>MiG-29</aero>
 
-  <aircraft-version>0.7</aircraft-version>
+  <aircraft-version>0.8</aircraft-version>
 
   <status>beta</status>
   <rating>
-   <FDM>1</FDM>
+   <FDM>2</FDM>
    <systems>1</systems>
    <cockpit>3</cockpit>
    <model>4</model>
