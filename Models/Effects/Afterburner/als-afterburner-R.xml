@@ -26,7 +26,7 @@
 	<property>sim/multiplay/generic/float[14]</property>
 	<nopreview/>
 	<x-factor>1.0</x-factor>
-	<y-factor>1.0</y-factor>
-	<z-factor>1.0</z-factor>
+	<y-factor>0.95</y-factor>
+	<z-factor>0.95</z-factor>
     </animation>
 </PropertyList>

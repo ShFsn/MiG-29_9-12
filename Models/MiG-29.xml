@@ -261,7 +261,6 @@
   <object-name>DUARight</object-name>
   <object-name>DUS</object-name>
   <object-name>Antena</object-name>
-  <object-name>KOLS_Glass</object-name>
   <object-name>KOLS</object-name>
   <object-name>Tube</object-name>
   <object-name>Fin_pitots.fwd</object-name>
@@ -491,6 +490,7 @@
   <object-name>FrontGlass</object-name>
   <object-name>CanopyGlass</object-name>
   <object-name>KOLS_Glass</object-name>
+  <object-name>KOLS.M</object-name>
   <object-name>MiG-29.BNL1</object-name>
   <object-name>MiG-29.BNL2</object-name>
   <object-name>MiG-29.BNR1</object-name>
