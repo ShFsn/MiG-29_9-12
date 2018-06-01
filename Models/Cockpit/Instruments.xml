@@ -6,6 +6,13 @@
 <PropertyList>
 
  <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>50</max-m>
+ </animation>
+
+
+ <animation>
   <type>noshadow</type>
   <object-name>UAP-7</object-name>
   <object-name>US-1600</object-name>

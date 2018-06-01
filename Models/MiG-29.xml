@@ -171,13 +171,6 @@
   </offsets>
  </model>
 
- <animation>
-  <type>range</type>
-  <object-name>Cockpit</object-name>
-  <min-m>0</min-m>
-  <max-m>50</max-m>
- </animation>
-
  <nasal>
   <load>
    var livery_update = aircraft.livery_update.new("Aircraft/MiG-29_9-12/Models/Liveries");

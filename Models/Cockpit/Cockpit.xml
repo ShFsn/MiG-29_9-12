@@ -7,6 +7,13 @@
 
  <path>cockpit_9-12.ac</path>
 
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>1500</max-m>
+ </animation>
+
+
  <model>
   <name>K-36DM</name>
   <path>Aircraft/MiG-29_9-12/Models/Submodels/K-36DM/K-36DM.xml</path>
