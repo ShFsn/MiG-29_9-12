@@ -575,6 +575,9 @@
    <weapon>
     <file>Aircraft/MiG-29_9-12/Nasal/weapons.nas</file>
    </weapon>
+   <damage>
+    <file>Aircraft/Mig-29_9-12/Nasal/damage.nas</file>
+   </damage>
  
    <hud>
     <file>Aircraft/MiG-29_9-12/Nasal/MiscRwr.nas</file>

@@ -11,4 +11,4 @@ License (except for the following part of): GNU General Public License version 3
 A note on the version of FlightGear: Works in 2.4, 2.8 and 2.10. Probably will work in 2.6 (is not checked).
 
 Discussion in Russian: http://www.flightgear.ru/forum/viewtopic.php?f=9&t=531
-Discussion in English: http://flightgear.org/forums/viewtopic.php?f=4&t=17709
+Discussion in English: https://forum.flightgear.org/viewtopic.php?f=4&t=17709
