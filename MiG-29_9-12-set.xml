@@ -262,6 +262,13 @@
        <script>aircraft.livery.dialog.open()</script>
       </binding>
      </item>
+     <item>
+      <label>Toggle MP damage</label>
+      <binding>
+       <command>nasal</command>
+       <script>weapon.mp_messaging()</script>
+      </binding>
+     </item>
     </menu>
    </default>
   </menubar>
@@ -342,6 +349,10 @@
    <key>
     <name>o</name>
     <desc>AP cut-out lever</desc>
+   </key>
+   <key>
+    <name>e</name>
+    <desc>Fire guns</desc>
    </key>
   </help>
 

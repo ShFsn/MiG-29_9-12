@@ -1,6 +1,22 @@
 # Weapons service script
 # Sergey "Mercenary_Mercury" Salow, Aug 2011
 
+#weapons messaging
+var mp_messaging = func {
+   if(getprop("fdm/jsbsim/gear/unit[0]/WOW")) {
+      setprop("payload/armament/msg", !getprop("payload/armament/msg"));
+      if(getprop("payload/armament/msg")) {
+         screen.log.write("MP damage is now enabled");
+      }
+      else {
+         screen.log.write("MP damage is now disabled");
+      }
+   }
+   else {
+      screen.log.write("Cannot toggle MP damage while in the air!");
+   }
+}
+
  var APU_470_handler = func {
   if (getprop("mig29/weapons/podv/T1") == 1 or getprop("mig29/weapons/podv/T1") == 2)
    {
