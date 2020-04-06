@@ -200,6 +200,13 @@
       </binding>
      </item>
      <item>
+      <label>Mig-29 Config</label>
+      <binding>
+       <command>dialog-show</command>
+       <dialog-name>mig29config</dialog-name>
+      </binding>
+     </item>
+     <item>
       <label>External loads</label>
       <binding>
        <command>dialog-show</command>
@@ -260,13 +267,6 @@
       <binding>
        <command>nasal</command>
        <script>aircraft.livery.dialog.open()</script>
-      </binding>
-     </item>
-     <item>
-      <label>Toggle MP damage</label>
-      <binding>
-       <command>nasal</command>
-       <script>weapon.mp_messaging()</script>
       </binding>
      </item>
     </menu>

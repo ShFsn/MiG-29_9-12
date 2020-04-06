@@ -1,13 +1,14 @@
 # engines.nas
 # Engines support scripts
 # May 2011, Sergey "Mercenary_Mercury" Salow
+# Translations of comments are from Google Translate circa 2020, beware
 
 var Ln2 = 0;
 var Rn2 = 0;
 var GTDEn2 = 0;
 var espz = 0;
 var startbut = 0;
-var ess = 0;    # Запускаемый двигатель, 0 - левый, 1 - оба, 2 - правый.
+var ess = 0;    # Запускаемый двигатель, 0 - левый, 1 - оба, 2 - правый. || Starting engine, 0 - left, 1 - both, 2 - right.
 
  var start_engine = func{
   var espz = getprop("mig29/controls/engines/espz");
@@ -83,7 +84,7 @@ var SECF_cmd = 0;
   settimer(StartEngine_CmdFunc, 0.2);
 }
 
-# Запуск левого двигателя на земле
+# Запуск левого двигателя на земле || Starting the left engine on the ground
  var StartLeftEngineOG = func {
   if ( getprop("fdm/jsbsim/fcs/throttle-cmd-norm[0]") > 0.0685 )
    {
@@ -98,7 +99,7 @@ var SECF_cmd = 0;
    }
 }
 
-# Запуск правого двигателя на земле
+# Запуск правого двигателя на земле || Starting the right engine on the ground
  var StartRightEngineOG = func {
   if ( getprop("fdm/jsbsim/fcs/throttle-cmd-norm[1]") > 0.0685 )
    {
@@ -113,7 +114,7 @@ var SECF_cmd = 0;
    }
 }
 
-# Запуск ГТДЭ
+# Запуск ГТДЭ || GTDE launch
  var Start_GTDE = func {
   var GTDEn2 = getprop("/engines/engine[2]/n2");
   if (getprop("/controls/engines/engine[2]/cutoff") == 0 and GTDEn2 < 25) {setprop("/controls/engines/engine[2]/cutoff", 1);}
@@ -123,7 +124,7 @@ var SECF_cmd = 0;
   settimer(Start_GTDE, 0);
 }
 
-# Запуск левого двигателя в воздухе
+# Запуск левого двигателя в воздухе || Starting the left engine in the air
  var StartLeftEngineIA = func {
   if (getprop("fdm/jsbsim/fcs/throttle-cmd-norm[0]") > 0.0685 and getprop("/engines/engine[0]/n2") < 50)
    {
@@ -134,7 +135,7 @@ var SECF_cmd = 0;
   settimer(StartLeftEngineIA, 0);
 }
 
-# Запуск правого двигателя в воздухе
+# Запуск правого двигателя в воздухе || Starting the right engine in the air
  var StartRightEngineIA = func {
   if (getprop("fdm/jsbsim/fcs/throttle-cmd-norm[1]") > 0.0685 and getprop("/engines/engine[1]/n2") < 50)
    {
@@ -145,7 +146,7 @@ var SECF_cmd = 0;
   settimer(StartRightEngineIA, 0);
 }
 
-# Автоматический запуск в воздухе
+# Автоматический запуск в воздухе || Auto start in the air
 
  var ASLEIA = func {
   if (getprop("/engines/engine[0]/n2") < 70 and getprop("/gear/gear[1]/wow") == 0 and getprop("mig29/systems/engines/start_left") == 0)
@@ -249,7 +250,7 @@ var EFRightJF_pos = 0;
   settimer(EFRight, 0.1);
 }
 
-# Обработчики положения РУДов
+# Обработчики положения РУДов || Ore (i.e. throttle) position handlers
 
 var t1cmd = 0;
 var t1cmd2 = 0;
@@ -259,7 +260,7 @@ var t2cmd2 = 0;
  var throttle1cmd_handler = func {
   var t1cmd = getprop("fdm/jsbsim/fcs/throttle-cmd-norm[0]");
   var t1cmd2 = getprop("mig29/systems/engines/Lpos");
-  if (t1cmd == 0.0)
+  if (t1cmd == 0.0 and !getprop("mig29/systems/engines/cutoffProtect"))
    {
     if (t1cmd2 < 1 or t1cmd2 > 1) {setprop("mig29/systems/engines/Lpos", 1); Stop_LeftEngine();}
    }
@@ -288,7 +289,7 @@ var t2cmd2 = 0;
  var throttle2cmd_handler = func {
   var t2cmd = getprop("fdm/jsbsim/fcs/throttle-cmd-norm[1]");
   var t2cmd2 = getprop("mig29/systems/engines/Rpos");
-  if (t2cmd == 0.0)
+  if (t2cmd == 0.0 and !getprop("mig29/systems/engines/cutoffProtect"))
    {
     if (t2cmd2 < 1 or t2cmd2 > 1) {setprop("mig29/systems/engines/Rpos", 1); Stop_RightEngine();}
    }

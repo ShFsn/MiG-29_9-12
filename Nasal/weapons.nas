@@ -5,12 +5,6 @@
 var mp_messaging = func {
    if(getprop("fdm/jsbsim/gear/unit[0]/WOW")) {
       setprop("payload/armament/msg", !getprop("payload/armament/msg"));
-      if(getprop("payload/armament/msg")) {
-         screen.log.write("MP damage is now enabled");
-      }
-      else {
-         screen.log.write("MP damage is now disabled");
-      }
    }
    else {
       screen.log.write("Cannot toggle MP damage while in the air!");
@@ -775,11 +769,11 @@ var Pylon_S_24B            = "S-24B";
 }
 
  var press_fire = func {
-  #if (getprop("/gear/gear[1]/compression-norm") == 0) {
+  if (getprop("mig29/systems/electrical/buses/AC3x200-bus-1/volts") > 100) {
    if (getprop("/ai/submodels/submodel[0]/count") > 0) {
       setprop("/controls/armament/trigger", 1);
    }
-  #}
+  }
 }
 
  var unpress_fire = func {
