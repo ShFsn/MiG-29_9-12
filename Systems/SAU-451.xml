@@ -1391,7 +1391,7 @@ adjust speed-pid to right state all time. -->
 <!--******************************** Yaw control *****************************-->
       <channel name="Yaw">
     
-	<!--Yaw damper-->        
+	<!--Yaw damper (Might delete this later)-->        
         <washout_filter name="ap/yaw-wf">
           <input>velocities/r-aero-rad_sec</input>
           <c1>0.4</c1>
@@ -1399,7 +1399,7 @@ adjust speed-pid to right state all time. -->
         
         <pure_gain name="ap/yaw-damper">
           <input>ap/yaw-wf</input>
-          <gain>8.0</gain><!--8-->
+          <gain>1.0</gain><!--8-->
         </pure_gain>
         
         <!--Slip stabilizer-->
