@@ -39,7 +39,7 @@
   <object-name>KI-13</object-name>
   <object-name>IPV</object-name>
   <object-name>IPV-31i</object-name>
-  <object-name>ILS-31i</object-name>
+  <!--object-name>ILS-31i</object-name-->
  </animation>
 
 <!-- КСЦ-2 - KSTs-2 -->
@@ -274,7 +274,7 @@
   </offsets>
  </model>
 
- <model>
+ <!--model>
   <name>ILS-31i</name>
   <path>Aircraft/MiG-29_9-12/Models/Cockpit/Instruments/ILS-31i/ILS-31i.xml</path>
   <offsets>
@@ -282,7 +282,7 @@
    <y-m>-0.00061</y-m>
    <z-m> 1.046</z-m>
   </offsets>
- </model>
+ </model-->
 
 <!-- УСТ (UST) -->
  <model>

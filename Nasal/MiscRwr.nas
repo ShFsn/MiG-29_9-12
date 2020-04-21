@@ -366,3 +366,31 @@ var deviation_normdeg = func(our_heading, target_bearing) {
         while (dev_norm > 180) dev_norm -= 360;
         return(dev_norm);
 }
+
+##################################################################################################################
+#                                      HUD canvas stuff going in below:                                          #
+##################################################################################################################
+
+var sx = 300;
+var sy=300;
+HUD_FONT = "LiberationFonts/LiberationMono-Bold.ttf";
+
+var hud_obj = canvas.new({
+        "name": "Mig-29 HUD",
+        "size": [1024,1024],
+        "view": [sx,sy],
+        "mipmapping": 0
+});
+
+hud_obj.addPlacement({"node": "ILSHud"});
+hud_obj.setColorBackground(1, 1, 1, 0);
+
+var hud_group = hud_obj.createGroup();
+
+var testing = hud_group.createChild("text")
+        .setTranslation(sx*0.5, sy*0.5)
+        .setAlignment("center-center")
+        .setColor(0,1,0,1)
+        .setFont(HUD_FONT)
+        .setFontSize(13, 1.4)
+        .setText("Testing");
