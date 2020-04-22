@@ -371,8 +371,13 @@ var deviation_normdeg = func(our_heading, target_bearing) {
 #                                      HUD canvas stuff going in below:                                          #
 ##################################################################################################################
 
+#HUD height = 1.13514 - 0.92343 = 0.21171
+#HUD width = 0.08794 - -0.08795 = 0.17589
+#HUD aspect ratio = 0.17589 / 0.21171 = 0.83081 (just say 5:6)
+#center is 150, 152
+
 var sx = 300;
-var sy=300;
+var sy = 360;
 HUD_FONT = "LiberationFonts/LiberationMono-Bold.ttf";
 
 var hud_obj = canvas.new({
@@ -387,10 +392,58 @@ hud_obj.setColorBackground(1, 1, 1, 0);
 
 var hud_group = hud_obj.createGroup();
 
-var testing = hud_group.createChild("text")
-        .setTranslation(sx*0.5, sy*0.5)
-        .setAlignment("center-center")
-        .setColor(0,1,0,1)
-        .setFont(HUD_FONT)
-        .setFontSize(13, 1.4)
-        .setText("Testing");
+# var testing = hud_group.createChild("text")
+#         .setTranslation(sx*0.5, sy*0.5)
+#         .setAlignment("center-center")
+#         .setColor(0,1,0,1)
+#         .setFont(HUD_FONT)
+#         .setFontSize(13, 1.4)
+#         .setText("Testing");
+
+var centerCanvas = hud_group.createChild("path")
+        .moveTo(sx*0.5-1, sy*0.5)
+        .horiz(2)
+        .setColor(0,1,0,1);
+
+var bore = hud_group.createChild("path")
+        .moveTo(sx*0.5-4, sy*0.5-28)
+        .horiz(-13)
+        .moveTo(sx*0.5+4, sy*0.5-28)
+        .horiz(13)
+        .moveTo(sx*0.5, sy*0.5-32)
+        .vert(-13)
+        .moveTo(sx*0.5, sy*0.5-24)
+        .vert(13)
+        .setColor(0,1,0,1);
+
+var bankIndication = hud_group.createChild("path")
+        .moveTo(sx*0.5-55, sy*0.5-28)
+        .horiz(-10)
+        .moveTo(sx*0.5-53.13, sy*0.5-13.76)
+        .line(-9.66,2.59)
+        .moveTo(sx*0.5-47.63, sy*0.5-0.5)
+        .line(-8.66,5)
+        .moveTo(sx*0.5-27.5, sy*0.5+19.63)
+        .line(-5,8.66)
+        #-------------------------------
+        .moveTo(sx*0.5+55, sy*0.5-28)
+        .horiz(10)
+        .moveTo(sx*0.5+53.13, sy*0.5-13.76)
+        .line(9.66,2.59)
+        .moveTo(sx*0.5+47.63, sy*0.5-0.5)
+        .line(8.66,5)
+        .moveTo(sx*0.5+27.5, sy*0.5+19.63)
+        .line(5,8.66)
+        .setColor(0,1,0,1);
+
+var headingPointer = hud_group.createChild("path")
+        .moveTo(sx*0.5, 52)
+        .line(6,10.39)
+        .line(-12,0)
+        .line(6,-10.39)
+        .setColor(0,1,0,1);
+
+var speedRefBar = hud_group.createChild("path")
+        .moveTo(51,54)
+        .horiz(26)
+        .setColor(0,1,0,1);
