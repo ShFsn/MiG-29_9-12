@@ -269,6 +269,19 @@
        <script>aircraft.livery.dialog.open()</script>
       </binding>
      </item>
+     <item>
+      <label>Tacview Record</label>
+      <binding>
+       <command>nasal</command>
+       <script>
+        if (tacview.starttime == 0) {
+         tacview.startwrite();
+        } else {
+         tacview.stopwrite();
+        }
+       </script>
+      </binding>
+     </item>
     </menu>
    </default>
   </menubar>
@@ -593,6 +606,12 @@
    <hud>
     <file>Aircraft/MiG-29_9-12/Nasal/MiscRwr.nas</file>
    </hud>
+   <mpdb>
+    <file>Aircraft/MiG-29_9-12/Nasal/mp_db.nas</file>
+   </mpdb>
+   <tacview>
+    <file>Aircraft/MIG-29_9-12/Nasal/tacview.nas</file>
+  </tacview>
    <radardist>
     <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
    </radardist>
