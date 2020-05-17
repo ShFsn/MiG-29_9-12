@@ -77,6 +77,10 @@
      <property>propulsion/tat-c</property>
     </sum>
    </function>
+   <clipto>
+    <min>0</min>
+    <max>330</max>
+   </clipto>
   </fcs_function>
 
   <fcs_function name="calculations/SVS/TT">
