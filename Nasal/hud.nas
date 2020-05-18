@@ -297,4 +297,4 @@ var init_listener = setlistener("sim/signals/fdm-initialized", func {
                 loop_hud.start();
                 removelistener(init_listener);
         }
- }, 0, 0);
+}, 0, 0);
