@@ -49,12 +49,12 @@ var startwrite = func() {
     write(myplaneID ~ ",T=" ~ getLon() ~ "|" ~ getLat() ~ "|" ~ getAlt() ~ "|" ~ getRoll() ~ "|" ~ getPitch() ~ "|" ~ getHeading() ~ ",Name=MiG-29_9-12,CallSign="~getprop("/sim/multiplay/callsign")~"\n"); #
     thread.unlock(mutexWrite);
     starttime = systime();
-    setprop("/sim/screen/black","Starting tacview recording");
+    setprop("/sim/screen/blue","Starting tacview recording");
     settimer(func(){mainloop();}, main_update_rate);
 }
 
 var stopwrite = func() {
-    setprop("/sim/screen/black","Stopping tacview recording");
+    setprop("/sim/screen/blue","Stopping tacview recording");
     writetofile();
     starttime = 0;
 }
