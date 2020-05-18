@@ -223,6 +223,7 @@ for(var headingCounter = 0; headingCounter <= 40; headingCounter = headingCounte
 }
 
 #update loop
+var distr = 0;
 var update = func {
         silhouette.setRotation(data.rotation.getValue() * D2R);
         speedIndication.setText(sprintf("%02d", data.currentSpeed.getValue()));
@@ -241,29 +242,35 @@ var update = func {
         var pitch = data.currentPitch.getValue();
         pitch_scale_group.setTranslation(0, pitch * 4);
         var pitch_offset = pitch/10 + 9;
-        for(var i = 0; i < 18; i = i + 1) { # taking sugestions for a more efficient implementation
-                if(math.abs(i - pitch_offset) < 1.8) {
-                        pitchElements[2*i].show();
-                        pitchElements[2*i + 1].show();
-                }
-                else {
-                        pitchElements[2*i].hide();
-                        pitchElements[2*i + 1].hide();
-                }
-        }
         horizonLine.setTranslation(0, data.currentHorizon.getValue() * 4);
         var heading = data.currentHeading.getValue();
         heading_scale_group.setTranslation(heading*-4.2, 0);
         var heading_offset = heading/10 + 2;
-        for(var i = 0; i <= 40; i = i + 1) {
-                if(math.abs(i - heading_offset) < 1) {
-                        headingElements[2*i].show();
-                        headingElements[2*i + 1].show();
+        if (distr == 0) {
+                for(var i = 0; i < 18; i = i + 1) { # taking sugestions for a more efficient implementation
+                        if(math.abs(i - pitch_offset) < 1.8) {
+                                pitchElements[2*i].show();
+                                pitchElements[2*i + 1].show();
+                        }
+                        else {
+                                pitchElements[2*i].hide();
+                                pitchElements[2*i + 1].hide();
+                        }
                 }
-                else {
-                        headingElements[2*i].hide();
-                        headingElements[2*i + 1].hide();
+                distr = 1;
+        }
+        else {
+                for(var i = 0; i <= 40; i = i + 1) {
+                        if(math.abs(i - heading_offset) < 1) {
+                                headingElements[2*i].show();
+                                headingElements[2*i + 1].show();
+                        }
+                        else {
+                                headingElements[2*i].hide();
+                                headingElements[2*i + 1].hide();
+                        }
                 }
+                distr = 0;
         }
 
 
