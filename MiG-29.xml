@@ -1734,7 +1734,7 @@
       <product>
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
-          <table>
+          <table name="lift due to alpha">
                <independentVar lookup="row">aero/alpha-deg</independentVar>
                <independentVar lookup="column">velocities/mach</independentVar>
                <tableData>
@@ -1749,14 +1749,14 @@
                    7.5         0.464387755   0.53068869    0.332619048
                   10.0         0.602301232   0.681898096   0.439608844
                   12.5         0.737793953   0.830979843   0.548057111
-                  15.0         0.863964166   0.87627448    0.655767077
+                  15.0         0.863964166   0.968131645   0.655767077
                   17.5         0.982385218   1.105283447   0.746466965
                   20.0         1.098441043   1.228174603   0.837161254
                   22.5         1.212409297   1.341326531   0.9
                   25.0         1.319160998   1.441411565   1.0
                   27.5         1.411150794   1.53776644    1.0
-		  30.0         1.5           1.631099773   1.0
-		  32.5         1.6           1.7           1.0
+		              30.0         1.5           1.631099773   1.0
+		              32.5         1.6           1.7           1.0
                </tableData>
           </table>
       </product>
