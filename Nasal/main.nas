@@ -14,6 +14,7 @@
   stabilator_pos_anim();
   WeightASF();
   pitot_heat();
+  damage_items();
 }
 
 # Canopy control
@@ -334,3 +335,13 @@ var WeightvarASG = 0;
   setprop("mig29/systems/weight/weapon-kg", WeightvarASF);
   settimer(WeightASF, 0.2);
 }
+
+var damage_items = func {
+  if(getprop("payload/armament/msg") == 1) {
+    setprop("sim/rendering/redout/enabled", 1);
+    setprop("/sim/rendering/als-filters/use-filtering", 1);
+  }
+  setprop("sim/multiplay/visibility-range-nm", 160);
+
+  settimer(damage_items, 0.1);
+};
