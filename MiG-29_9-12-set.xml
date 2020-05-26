@@ -270,6 +270,13 @@
       </binding>
      </item>
      <item>
+      <label>Training Scenario</label>
+      <binding>
+       <command>dialog-show</command>
+       <dialog-name>scenario28</dialog-name>
+      </binding>
+     </item> 
+     <item>
       <label>Tacview Record</label>
       <binding>
        <command>nasal</command>
@@ -611,7 +618,13 @@
    </mpdb>
    <tacview>
     <file>Aircraft/MIG-29_9-12/Nasal/tacview.nas</file>
-  </tacview>
+   </tacview>
+   <mig28>
+    <file>Aircraft/MiG-29_9-12/Nasal/mig28.nas</file>
+   </mig28>
+   <vector>
+    <file>Aircraft/MiG-29_9-12/Nasal/vector.nas</file>
+   </vector>
    <radardist>
     <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
    </radardist>

@@ -24,7 +24,8 @@ var init_systems = func{
  aircraft.livery.init("Aircraft/MiG-29_9-12/Models/Liveries");
  PVP_dialog = gui.Dialog.new("/sim/gui/dialogs/PVP/dialog","Aircraft/MiG-29_9-12/Dialogs/PVP.xml");
  EL_dialog = gui.Dialog.new("/sim/gui/dialogs/EL/dialog","Aircraft/MiG-29_9-12/Dialogs/external-loads.xml");
- Config_dialog = gui.Dialog.new("/sim/gui/dialogs/mig29config/dialog","Aircraft/MiG-29_9-12/Dialogs/config.xml")
+ Config_dialog = gui.Dialog.new("/sim/gui/dialogs/mig29config/dialog","Aircraft/MiG-29_9-12/Dialogs/config.xml");
+ Training_dialog = gui.Dialog.new("/sim/gui/dialogs/scenario28/dialog","Aircraft/MiG-29_9-12/Dialogs/scenario28.xml");
 }
 
 
