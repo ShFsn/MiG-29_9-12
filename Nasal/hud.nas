@@ -247,7 +247,7 @@ var update = func {
         heading_scale_group.setTranslation(heading*-4.2, 0);
         var heading_offset = heading/10 + 2;
         if (distr == 0) {
-                for(var i = 0; i < 18; i = i + 1) { # taking sugestions for a more efficient implementation
+                for(var i = 0; i < 19; i = i + 1) { # taking sugestions for a more efficient implementation
                         if(math.abs(i - pitch_offset) < 1.8) {
                                 pitchElements[2*i].show();
                                 pitchElements[2*i + 1].show();
