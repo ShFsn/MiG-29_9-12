@@ -270,6 +270,13 @@
       </binding>
      </item>
      <item>
+      <label>Combat Log</label>
+      <binding>
+        <command>dialog-show</command>
+        <dialog-name>flightlog</dialog-name>
+      </binding>
+     </item>
+     <item>
       <label>Training Scenario</label>
       <binding>
        <command>dialog-show</command>
@@ -562,6 +569,13 @@
 
   <mig29 include="Systems/var.xml"/>
 
+  <payload>
+    <armament>
+      <models type="string">Aircraft/MiG-29_9-12/Models/Armament/</models>
+      <MLW-count type="int">0</MLW-count>
+    </armament>
+  </payload>
+
 <!-- Support scripts -->
 
   <nasal>
@@ -609,6 +623,10 @@
    <damage>
     <file>Aircraft/Mig-29_9-12/Nasal/damage.nas</file>
    </damage>
+   <notifications>
+    <file>Aircraft/Mig-29_9-12/Nasal/ArmamentNotification.nas</file>
+    <file>Aircraft/Mig-29_9-12/Nasal/GeoBridgedTransmitter.nas</file>
+   </notifications>
  
    <hud>
     <file>Aircraft/MiG-29_9-12/Nasal/hud.nas</file>

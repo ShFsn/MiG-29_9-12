@@ -26,6 +26,7 @@ var init_systems = func{
  EL_dialog = gui.Dialog.new("/sim/gui/dialogs/EL/dialog","Aircraft/MiG-29_9-12/Dialogs/external-loads.xml");
  Config_dialog = gui.Dialog.new("/sim/gui/dialogs/mig29config/dialog","Aircraft/MiG-29_9-12/Dialogs/config.xml");
  Training_dialog = gui.Dialog.new("/sim/gui/dialogs/scenario28/dialog","Aircraft/MiG-29_9-12/Dialogs/scenario28.xml");
+ flightlog_dialog=gui.Dialog.new("/sim/gui/dialogs/eventlog/dialog","Aircraft/MiG-29_9-12/Dialogs/event-log.xml")
 }
 
 
