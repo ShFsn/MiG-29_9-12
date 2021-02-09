@@ -101,49 +101,19 @@ var impact_listener = func {
 setlistener("/ai/models/model-impact", impact_listener, 0, 0);
 
 var hitmessage = func(typeOrd) {
-  var phrase = typeOrd ~ " hit: " ~ hit_callsign ~ ": " ~ hits_count ~ " hits";
   if (getprop("payload/armament/msg") == 1) {
-    defeatSpamFilter(phrase);
-  } else {
-    setprop("/sim/messages/atc", phrase);
+    var msg = notifications.ArmamentNotification.new("mhit", 4, -1*(damage.shells[typeOrd][0]+1));
+    msg.RelativeAltitude = 0;
+    msg.Bearing = 0;
+    msg.Distance = hits_count;
+    msg.RemoteCallsign = hit_callsign;
+    notifications.hitBridgedTransmitter.NotifyAll(msg);
+    damage.damageLog.push("You hit "~hit_callsign~" with "~typeOrd~", "~hits_count~" times.");
   }
   hit_callsign = "";
   hit_timer = nil;
   hits_count = 0;
 }
-
-var spams = 0;
-var spamList = [];
-
-var defeatSpamFilter = func (str) {
-  spams += 1;
-  if (spams == 15) {
-    spams = 1;
-  }
-  str = str~":";
-  for (var i = 1; i <= spams; i+=1) {
-    str = str~".";
-  }
-  var myCallsign = getprop("sim/multiplay/callsign");
-  if (myCallsign != nil and find(myCallsign, str) != -1) {
-      str = myCallsign~": "~str;
-  }
-  var newList = [str];
-  for (var i = 0; i < size(spamList); i += 1) {
-    append(newList, spamList[i]);
-  }
-  spamList = newList;
-}
-
-var spamLoop = func {
-  var spam = pop(spamList);
-  if (spam != nil) {
-    setprop("/sim/multiplay/chat", spam);
-  }
-  settimer(spamLoop, 1.20);
-}
-
-spamLoop();
 
 ########################End of cannon code############################
 

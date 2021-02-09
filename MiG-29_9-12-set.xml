@@ -573,6 +573,12 @@
     <armament>
       <models type="string">Aircraft/MiG-29_9-12/Models/Armament/</models>
       <MLW-count type="int">0</MLW-count>
+      <enable-craters type="bool">true</enable-craters>
+      <MLW-bearing type="double">0</MLW-bearing>
+      <MLW-launcher type="string"></MLW-launcher>
+      <MAW-bearing type="double">0</MAW-bearing>
+      <MAW-active type="bool">false</MAW-active>
+      <spike type="bool">false</spike>
     </armament>
   </payload>
 
