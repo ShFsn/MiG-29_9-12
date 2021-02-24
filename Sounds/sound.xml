@@ -4,6 +4,138 @@
 
  <fx>
 
+  <!--######################################################################-->
+  <!--                      Engine internal with canopy open                -->
+  <!--######################################################################-->
+
+
+  <engine>
+   <name>thrust_1_intake_internal</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_front.wav</path>
+   <mode>looped</mode>
+   <condition>
+    <property>sim/current-view/internal</property>
+   </condition>
+   <volume>
+    <property>/engines/engine[0]/n2</property>
+    <factor>0.013</factor>
+   </volume>
+   <volume>
+    <property>fdm/jsbsim/fcs/canopy-pos-norm</property>
+    <factor>1</factor>
+   </volume>
+   <position>
+    <x>0</x>
+    <y>-2.01</y>
+    <z>0.01</z>
+   </position>
+   <orientation>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <inner-angle>200.0</inner-angle>
+    <outer-angle>360.0</outer-angle>
+    <outer-gain>0.25</outer-gain>
+   </orientation>
+  </engine>
+
+  <engine>
+   <name>thrust_2_intake_internal</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_front.wav</path>
+   <mode>looped</mode>
+   <condition>
+    <property>sim/current-view/internal</property>
+   </condition>
+   <volume>
+    <property>/engines/engine[1]/n2</property>
+    <factor>0.013</factor>
+   </volume>
+   <volume>
+    <property>fdm/jsbsim/fcs/canopy-pos-norm</property>
+    <factor>1</factor>
+   </volume>
+   <position>
+    <x>0</x>
+    <y>2.01</y>
+    <z>0.01</z>
+   </position>
+   <orientation>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <inner-angle>200.0</inner-angle>
+    <outer-angle>360.0</outer-angle>
+    <outer-gain>0.25</outer-gain>
+   </orientation>
+  </engine>
+
+
+  <!--######################################################################-->
+  <!--                        Engine external                               -->
+  <!--######################################################################-->
+
+
+  <engine>
+   <name>thrust_1_intake</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_front.wav</path>
+   <mode>looped</mode>
+   <condition>
+    <not>
+     <property>sim/current-view/internal</property>
+    </not>
+   </condition>
+   <volume>
+    <property>/engines/engine[0]/n2</property>
+    <factor>0.013</factor>
+   </volume>
+   <position>
+    <x>0</x>
+    <y>-2.01</y>
+    <z>0.01</z>
+   </position>
+   <orientation>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <inner-angle>200.0</inner-angle>
+    <outer-angle>360.0</outer-angle>
+    <outer-gain>0.25</outer-gain>
+   </orientation>
+  </engine>
+
+  <engine>
+   <name>thrust_2_intake</name>
+   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_front.wav</path>
+   <mode>looped</mode>
+   <condition>
+    <not>
+     <property>sim/current-view/internal</property>
+    </not>
+   </condition>
+   <volume>
+    <property>/engines/engine[1]/n2</property>
+    <factor>0.013</factor>
+   </volume>
+   <position>
+    <x>0</x>
+    <y>2.01</y>
+    <z>0.01</z>
+   </position>
+   <orientation>
+    <x>-1.0</x>
+    <y>0.0</y>
+    <z>0.0</z>
+    <inner-angle>200.0</inner-angle>
+    <outer-angle>360.0</outer-angle>
+    <outer-gain>0.25</outer-gain>
+   </orientation>
+  </engine>
+
+
+  <!--######################################################################-->
+  <!--                        Other sounds                                  -->
+  <!--######################################################################-->
+
 
   <engine>
    <name>Engine3</name>
@@ -79,51 +211,7 @@
 
 
 
-  <engine>
-   <name>thrust_1_intake</name>
-   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_front.wav</path>
-   <mode>looped</mode>
-   <volume>
-    <property>/engines/engine[0]/n2</property>
-    <factor>0.013</factor>
-   </volume>
-   <position>
-    <x>0</x>
-    <y>-2.01</y>
-    <z>0.01</z>
-   </position>
-   <orientation>
-    <x>-1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <inner-angle>200.0</inner-angle>
-    <outer-angle>360.0</outer-angle>
-    <outer-gain>0.25</outer-gain>
-   </orientation>
-  </engine>
 
-  <engine>
-   <name>thrust_2_intake</name>
-   <path>Aircraft/MiG-29_9-12/Sounds/base/thrust_front.wav</path>
-   <mode>looped</mode>
-   <volume>
-    <property>/engines/engine[1]/n2</property>
-    <factor>0.013</factor>
-   </volume>
-   <position>
-    <x>0</x>
-    <y>2.01</y>
-    <z>0.01</z>
-   </position>
-   <orientation>
-    <x>-1.0</x>
-    <y>0.0</y>
-    <z>0.0</z>
-    <inner-angle>200.0</inner-angle>
-    <outer-angle>360.0</outer-angle>
-    <outer-gain>0.25</outer-gain>
-   </orientation>
-  </engine>
 
 
 
