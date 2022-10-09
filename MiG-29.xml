@@ -889,8 +889,23 @@
        <min>fcs/elevator-min</min>
        <max>fcs/elevator-max</max>
       </clipto>
-      <output>fcs/elevator-pos-rad</output>
+      <output>fcs/elevator-pos-raw</output>
    </aerosurface_scale>
+
+    <kinematic name="Elevator filter">
+     <input>fcs/elevator-pos-raw</input>
+      <traverse>
+        <setting>
+          <position>-1</position>
+          <time>0</time>
+        </setting>
+        <setting>
+          <position>1</position>
+          <time>1</time>
+        </setting>
+      </traverse>
+      <output>fcs/elevator-pos-rad</output>
+    </kinematic>
 
    <aerosurface_scale name="elevator normalization">
       <input>fcs/elevator-pos-rad</input>
@@ -991,8 +1006,23 @@
         <min> -0.35 </min>
         <max>  0.2618 </max>
       </range>
-      <output>fcs/left-aileron-pos-rad</output>
+      <output>fcs/left-aileron-pos-raw</output>
    </aerosurface_scale>
+
+    <kinematic name="Left Aileron filter">
+     <input>fcs/left-aileron-pos-raw</input>
+      <traverse>
+        <setting>
+          <position>-1</position>
+          <time>0</time>
+        </setting>
+        <setting>
+          <position>1</position>
+          <time>1</time>
+        </setting>
+      </traverse>
+      <output>fcs/left-aileron-pos-rad</output>
+    </kinematic>
 
    <aerosurface_scale name="Right Aileron Control">
       <input>fcs/roll-hydropower</input>
@@ -1001,8 +1031,23 @@
         <min> -0.35 </min>
         <max>  0.2618 </max>
       </range>
-      <output>fcs/right-aileron-pos-rad</output>
+      <output>fcs/right-aileron-pos-raw</output>
    </aerosurface_scale>
+
+    <kinematic name="Right Aileron filter">
+     <input>fcs/right-aileron-pos-raw</input>
+      <traverse>
+        <setting>
+          <position>-1</position>
+          <time>0</time>
+        </setting>
+        <setting>
+          <position>1</position>
+          <time>1</time>
+        </setting>
+      </traverse>
+      <output>fcs/right-aileron-pos-rad</output>
+    </kinematic>
 
    <aerosurface_scale name="left aileron normalization">
       <input>fcs/left-aileron-pos-rad</input>
@@ -1292,8 +1337,23 @@
        <min> -0.436332313 </min>
        <max>  0.436332313 </max>
       </range>
-      <output>fcs/rudder-pos-rad</output>
+      <output>fcs/rudder-pos-raw</output>
    </aerosurface_scale>
+
+    <kinematic name="Rudder filter">
+     <input>fcs/rudder-pos-raw</input>
+      <traverse>
+        <setting>
+          <position>-1</position>
+          <time>0</time>
+        </setting>
+        <setting>
+          <position>1</position>
+          <time>1</time>
+        </setting>
+      </traverse>
+      <output>fcs/rudder-pos-rad</output>
+    </kinematic>
 
    <aerosurface_scale name="rudder normalization">
       <input>fcs/rudder-pos-rad</input>
