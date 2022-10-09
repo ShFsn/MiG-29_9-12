@@ -634,6 +634,9 @@
    <misc>
     <file>Aircraft/Generic/limits.nas</file>
    </misc>
+   <mig29-scripts>
+     <file>Aircraft/MiG-29_9-12/Nasal/mig29-scripts.nas</file>
+   </mig29-scripts>
   </nasal>
 
  <fdm>
