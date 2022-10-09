@@ -66,18 +66,18 @@ var SECF_cmd = 0;
   if (SECF_cmd == 1)
    {
     if (getprop("/engines/engine[2]/n2") < 0.01) {Start_GTDE();}
-    if (getprop("/engines/engine[2]/n2") > 10 and getprop("/engines/engine[0]/n2") == 0) {StartLeftEngineOG();}
+    if (getprop("/engines/engine[2]/n2") > 10 and getprop("/engines/engine[0]/n2") < 5) {StartLeftEngineOG();}
    }
   if (SECF_cmd == 2)
    {
     if (getprop("/engines/engine[2]/n2") < 0.01) {Start_GTDE();}
-    if (getprop("/engines/engine[2]/n2") > 10 and getprop("/engines/engine[1]/n2") == 0) {StartRightEngineOG();}
-    if (getprop("/engines/engine[0]/n2") == 0 and getprop("/engines/engine[1]/running") == 1) {StartLeftEngineOG();}
+    if (getprop("/engines/engine[2]/n2") > 10 and getprop("/engines/engine[1]/n2") < 5) {StartRightEngineOG();}
+    if (getprop("/engines/engine[0]/n2") < 5 and getprop("/engines/engine[1]/running") == 1) {StartLeftEngineOG();}
    }
   if (SECF_cmd == 3)
    {
     if (getprop("/engines/engine[2]/n2") < 0.01) {Start_GTDE();}
-    if (getprop("/engines/engine[2]/n2") > 10 and getprop("/engines/engine[1]/n2") == 0) {StartRightEngineOG();}
+    if (getprop("/engines/engine[2]/n2") > 10 and getprop("/engines/engine[1]/n2") < 5) {StartRightEngineOG();}
    }
   if (getprop("/engines/engine[0]/running") == 1 and getprop("/engines/engine[1]/running") == 1 and getprop("/engines/engine[2]/running") == 1)
    {Stop_GTDE(); return;}
