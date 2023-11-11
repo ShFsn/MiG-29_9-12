@@ -41,26 +41,7 @@
   <object-name>handBR</object-name>
   <object-name>handCR</object-name>
   <condition>
-   <not>
-    <or>
-     <equals>
-      <property>/sim/current-view/view-number</property>
-      <value>0</value>
-     </equals>
-     <equals>
-      <property>/sim/current-view/view-number</property>
-      <value>8</value>
-     </equals>
-     <equals>
-      <property>/sim/current-view/view-number</property>
-      <value>9</value>
-     </equals>
-     <equals>
-      <property>/sim/current-view/view-number</property>
-      <value>10</value>
-     </equals>
-    </or>
-   </not>
+    <not><property>/sim/current-view/internal</property></not>
   </condition>
  </animation>
 
@@ -74,26 +55,7 @@
      <property>/position/altitude-ft</property>
      <value>3000</value>
     </greater-than>
-    <not>
-     <or>
-      <equals>
-       <property>/sim/current-view/view-number</property>
-       <value>0</value>
-      </equals>
-      <equals>
-       <property>/sim/current-view/view-number</property>
-       <value>8</value>
-      </equals>
-      <equals>
-       <property>/sim/current-view/view-number</property>
-       <value>9</value>
-      </equals>
-      <equals>
-       <property>/sim/current-view/view-number</property>
-       <value>10</value>
-      </equals>
-     </or>
-    </not>
+    <not><property>/sim/current-view/internal</property></not>
    </and>
   </condition>
  </animation>
