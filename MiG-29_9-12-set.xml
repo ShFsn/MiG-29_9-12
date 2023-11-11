@@ -720,4 +720,19 @@
   </jsbsim>
  </fdm>
 
+	<exhaust>
+		<b_f_r type="double">1.0</b_f_r>
+		<b_f_g type="double">0.968</b_f_g>
+		<b_f_b type="double">0.752</b_f_b>
+		<f_c_h_r type="double">0.972</f_c_h_r>
+		<f_c_h_g type="double">0.764</f_c_h_g>
+		<f_c_h_b type="double">0.6</f_c_h_b>
+		<f_c_l_r type="double">0.972</f_c_l_r>
+		<f_c_l_g type="double">0.764</f_c_l_g>
+		<f_c_l_b type="double">0.6</f_c_l_b>
+		<b_f_d type="double">0.5</b_f_d>
+		<t_d type="double">0.1</t_d>
+		<f_r_f type="double">0.45</f_r_f>
+	</exhaust>
+
 </PropertyList>
