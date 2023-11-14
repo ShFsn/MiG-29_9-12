@@ -10,7 +10,72 @@
  <sim>
 
   <description>MiG-29 (9-12) - lightweight frontline fighter</description>
-  <author>Sergey "Mercenary_Mercury" Salov (FDM, cockpit, submodels, systems), Enrique Laso Leon (external model), Oleg Ard (Liveries), Geed (Sounds), FGUK crew (tweaks)</author>
+  <author>Sergey "Mercenary_Mercury" Salov</author>
+  <authors>
+    <author n="0">
+      <name>Sergey Salov</name>
+      <description>FDM, cockpit, submodels, systems</description>
+      <nick>Mercenary_Mercury</nick>
+    </author>
+    <author n="1">
+      <name>Enrique Laso Leon</name>
+      <description>external model</description>
+    </author>
+    <author n="2">
+      <name>Oleg Ard</name>
+      <description>Liveries</description>
+    </author>
+    <author n="3">
+      <name>Geed</name>
+      <description>Sounds</description>
+    </author>
+    <author n="4">
+      <name>FGUK crew</name>
+      <description>tweaks</description>
+    </author>
+  </authors>  
+  <urls>
+    <home-page>https://github.com/ShFsn/MiG-29_9-12</home-page>
+    <support>https://github.com/ShFsn/MiG-29_9-12/issues</support>
+    <wikipedia>https://en.wikipedia.org/wiki/Mikoyan_MiG-29</wikipedia>
+    <code-repository>https://github.com/ShFsn/MiG-29_9-12</code-repository>
+  </urls>
+
+  <localized>
+    <ru>
+      <description>MiG-29 (9-12) - лёгкий фронтовой истребитель</description>
+      <author>Сергей "Mercenary_Mercury" Салов</author>
+      <authors>
+        <author n="0">
+          <name>Сергей Салов</name>
+          <description>FDM, кабина, подмодели, системы</description>
+          <nick>Mercenary_Mercury</nick>
+        </author>
+        <author n="1">
+          <name>Enrique Laso Leon</name>
+          <description>внешняя модель</description>
+        </author>
+        <author n="2">
+          <name>Олег Ард</name>
+          <description>Ливреи</description>
+        </author>
+        <author n="3">
+          <name>Geed</name>
+          <description>Звуки</description>
+        </author>
+        <author n="4">
+          <name>команда FGUK</name>
+          <description>твики</description>
+        </author>
+      </authors>  
+      <urls>
+        <home-page>https://github.com/ShFsn/MiG-29_9-12</home-page>
+        <support>https://github.com/ShFsn/MiG-29_9-12/issues</support>
+        <wikipedia>https://ru.wikipedia.org/wiki/МиГ-29</wikipedia>
+        <code-repository>https://github.com/ShFsn/MiG-29_9-12</code-repository>
+      </urls>
+    </ru>
+  </localized>
 
   <flight-model>jsb</flight-model>
   <aero>MiG-29</aero>
